@@ -7,9 +7,13 @@ const Posts = (props) => {
 
   return (
     <div className='posts-container-wrapper'>
-    {props.data.map(single_post=>
-                    <Post post ={single_post} likePost = {(data)=>{return data}}></Post>)}
+    {/* {props.data.map(single_post=>
+                    <Post post ={single_post} likePost = {(data)=>{return data}}></Post>)} */}
             {/* Check the implementation of Post to see what props it requires! */}
+            {/* {props.data.map(Post)} */}
+            {props.data.map(post=>Post({post:post,
+                                        likePost:likePost}
+                                        ))}
     </div>
   );
 };

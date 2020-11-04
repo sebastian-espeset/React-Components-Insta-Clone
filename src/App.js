@@ -22,6 +22,7 @@ const App = () => {
   const [posts,setPosts]= useState(dummyData);
   const likePost = postId => {
     /*
+    //
       This function serves the purpose of increasing the number of likes by one, of the post with a given id.
 
       The state of the app lives at the top of the React tree, but it wouldn't be fair for nested components not to be able to change state!
